@@ -1,0 +1,182 @@
+@charset "UTF-8";
+* {
+  Margin: 0%;
+  padding: 0px; }
+
+body {
+  background-color: #f8f8f8;
+  font-family: Raleway; }
+
+/* header */
+.titulo h1 {
+  font-family: "Sigmar One", cursive;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 4.9em;
+  letter-spacing: 4px;
+  color: #ffd700; }
+
+/* menu */
+ul {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 20px;
+  list-style: none;
+  display: inline-flex;
+  margin: 1px; }
+  ul li {
+    background-color: #a52a2a;
+    margin: 6px;
+    position: relative;
+    letter-spacing: 2px; }
+    ul li a {
+      text-decoration: none;
+      padding: 3px; }
+    ul li ul li a:hover {
+      background-color: #ffd700;
+      padding: 2px; }
+
+/* contenedor*/
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5, 1fr); }
+
+.contenedor > .header, .contenedor > .contenido, .contenedor > .sidebar, .contenedor > .footer, .contenedor > div {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #000000; }
+
+.contenedor > .header, .contenedor > .footer {
+  grid-column: 1/-1;
+  background-color: #a52a2a;
+  align-content: space-around; }
+
+.contenedor > .contenido {
+  /*el contenido abarca 3 columnas*/
+  grid-column: span 3;
+  grid-row: span 4; }
+
+.contenido > .article {
+  background: #808e9b;
+  padding: 20px;
+  margin-top: 5px;
+  color: #000000; }
+
+.contenido .article h1,
+.contenido .article p {
+  padding: 10px; }
+
+.contenedor > .sidebar {
+  grid-column: span 2;
+  grid-row: span 4;
+  background: #808080;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/*estilo para imagen */
+.contenedor .sidebar img {
+  display: block;
+  width: 100%;
+  margin-top: 10px; }
+
+/* TABLA */
+table {
+  border: 6px solid;
+  font-size: 10px;
+  border-spacing: 1px;
+  width: 350px;
+  height: 150px;
+  letter-spacing: 4px;
+  text-align: center; }
+  table th {
+    background-color: #a52a2a;
+    border: 1px solid #000000; }
+  table tr td {
+    border: 1px solid #000000;
+    background-color: #a52a2a;
+    color: #ffd700; }
+
+p {
+  font-size: 16px; }
+
+/* footer */
+footer h5 {
+  display: inline;
+  padding-right: 20px; }
+
+/* Animacion para titulo */
+.bg-5 {
+  background: linear-gradient(135deg, #e3e3e3 0%, #5d6874 10%); }
+
+.animated-shadow {
+  color: #ffffff;
+  font: normal 140px Varela Round, sans-serif;
+  height: 140px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2; }
+
+/*Animación para rotar las sombras*/
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 #da0641,  3px -3px 0 #da0641,  2px -2px 0 #da0641,  1px -1px 0 #da0641,  -4px 4px 0 #13f1fc,  -3px 3px 0 #13f1fc,  -2px 2px 0 #13f1fc,  -1px 1px 0 #13f1fc; }
+  25% {
+    text-shadow: -4px -4px 0 #13f1fc,  -3px -3px 0 #13f1fc,  -2px -2px 0 #13f1fc,  -1px -1px 0 #13f1fc,  4px 4px 0 #da0641,  3px 3px 0 #da0641,  2px 2px 0 #da0641,  1px 1px 0 #da0641; }
+  50% {
+    text-shadow: -4px 4px 0 #da0641,  -3px 3px 0 #da0641,  -2px 2px 0 #da0641,  -1px 1px 0 #da0641,  4px -4px 0 #13f1fc,  3px -3px 0 #13f1fc,  2px -2px 0 #13f1fc,  1px -1px 0 #13f1fc; }
+  75% {
+    text-shadow: 4px 4px 0 #13f1fc,  3px 3px 0 #13f1fc,  2px 2px 0 #13f1fc,  1px 1px 0 #13f1fc,  -4px -4px 0 #da0641,  -3px -3px 0 #da0641,  -2px -2px 0 #da0641,  -1px -1px 0 #da0641; }
+  100% {
+    text-shadow: 4px -4px 0 #da0641,  3px -3px 0 #da0641,  2px -2px 0 #da0641,  1px -1px 0 #da0641,  -4px 4px 0 #13f1fc,  -3px 3px 0 #13f1fc,  -2px 2px 0 #13f1fc,  -1px 1px 0 #13f1fc; } }
+
+/* Animacion para badge de booststrap */
+.sombra:hover {
+  border-radius: 20%;
+  -webkit-border-radius: 20%;
+  box-shadow: 0px 0px 15px 15px gold;
+  -webkit-box-shadow: 0px 0px 15px 15px gold; }
+
+.parpadeo {
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite; }
+
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1.0; } }
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1.0; } }
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1.0; } }
