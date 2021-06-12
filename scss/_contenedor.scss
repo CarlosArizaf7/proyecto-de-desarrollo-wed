@@ -1,4 +1,4 @@
- /* contenedor*/
+ /* Contenedor*/
  .contenedor {
   width: 90%;
   max-width: 1000px;
@@ -21,7 +21,7 @@
 }
  
 .contenedor>.contenido {
-  /*el contenido abarca 3 columnas*/
+  /*El contenido abarca 3 columnas*/
   grid-column: span 3;
   grid-row: span 4;
 }
@@ -48,7 +48,7 @@
   justify-content: center;
 }
 
-/*estilo para imagen */
+/*Estilo para imagen */
 .contenedor .sidebar img {
   display: block;
   width: 100%;

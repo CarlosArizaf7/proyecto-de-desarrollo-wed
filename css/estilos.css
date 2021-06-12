@@ -7,7 +7,7 @@ body {
   background-color: #f8f8f8;
   font-family: Raleway; }
 
-/* header */
+/* Header */
 .titulo h1 {
   font-family: "Sigmar One", cursive;
   padding: 20px 0;
@@ -16,7 +16,7 @@ body {
   letter-spacing: 4px;
   color: #ffd700; }
 
-/* menu */
+/* Menu */
 ul {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding-top: 1px;
@@ -37,7 +37,7 @@ ul {
       background-color: #ffd700;
       padding: 2px; }
 
-/* contenedor*/
+/* Contenedor*/
 .contenedor {
   width: 90%;
   max-width: 1000px;
@@ -57,7 +57,7 @@ ul {
   align-content: space-around; }
 
 .contenedor > .contenido {
-  /*el contenido abarca 3 columnas*/
+  /*El contenido abarca 3 columnas*/
   grid-column: span 3;
   grid-row: span 4; }
 
@@ -80,7 +80,7 @@ ul {
   align-items: center;
   justify-content: center; }
 
-/*estilo para imagen */
+/*Estilo para imagen */
 .contenedor .sidebar img {
   display: block;
   width: 100%;
@@ -106,7 +106,7 @@ table {
 p {
   font-size: 16px; }
 
-/* footer */
+/* Footer */
 footer h5 {
   display: inline;
   padding-right: 20px; }
@@ -130,15 +130,50 @@ footer h5 {
 /*Animación para rotar las sombras*/
 @keyframes move {
   0% {
-    text-shadow: 4px -4px 0 #da0641,  3px -3px 0 #da0641,  2px -2px 0 #da0641,  1px -1px 0 #da0641,  -4px 4px 0 #13f1fc,  -3px 3px 0 #13f1fc,  -2px 2px 0 #13f1fc,  -1px 1px 0 #13f1fc; }
+    text-shadow: 4px -4px 0 #da0641,
+  3px -3px 0 #da0641,
+  2px -2px 0 #da0641,
+  1px -1px 0 #da0641,
+  -4px 4px 0 #13f1fc,
+  -3px 3px 0 #13f1fc,
+  -2px 2px 0 #13f1fc,
+  -1px 1px 0 #13f1fc; }
   25% {
-    text-shadow: -4px -4px 0 #13f1fc,  -3px -3px 0 #13f1fc,  -2px -2px 0 #13f1fc,  -1px -1px 0 #13f1fc,  4px 4px 0 #da0641,  3px 3px 0 #da0641,  2px 2px 0 #da0641,  1px 1px 0 #da0641; }
+    text-shadow: -4px -4px 0 #13f1fc,
+  -3px -3px 0 #13f1fc,
+  -2px -2px 0 #13f1fc,
+  -1px -1px 0 #13f1fc,
+  4px 4px 0 #da0641,
+  3px 3px 0 #da0641,
+  2px 2px 0 #da0641,
+  1px 1px 0 #da0641; }
   50% {
-    text-shadow: -4px 4px 0 #da0641,  -3px 3px 0 #da0641,  -2px 2px 0 #da0641,  -1px 1px 0 #da0641,  4px -4px 0 #13f1fc,  3px -3px 0 #13f1fc,  2px -2px 0 #13f1fc,  1px -1px 0 #13f1fc; }
+    text-shadow: -4px 4px 0 #da0641,
+  -3px 3px 0 #da0641,
+  -2px 2px 0 #da0641,
+  -1px 1px 0 #da0641,
+  4px -4px 0 #13f1fc,
+  3px -3px 0 #13f1fc,
+  2px -2px 0 #13f1fc,
+  1px -1px 0 #13f1fc; }
   75% {
-    text-shadow: 4px 4px 0 #13f1fc,  3px 3px 0 #13f1fc,  2px 2px 0 #13f1fc,  1px 1px 0 #13f1fc,  -4px -4px 0 #da0641,  -3px -3px 0 #da0641,  -2px -2px 0 #da0641,  -1px -1px 0 #da0641; }
+    text-shadow: 4px 4px 0 #13f1fc,
+  3px 3px 0 #13f1fc,
+  2px 2px 0 #13f1fc,
+  1px 1px 0 #13f1fc,
+  -4px -4px 0 #da0641,
+  -3px -3px 0 #da0641,
+  -2px -2px 0 #da0641,
+  -1px -1px 0 #da0641; }
   100% {
-    text-shadow: 4px -4px 0 #da0641,  3px -3px 0 #da0641,  2px -2px 0 #da0641,  1px -1px 0 #da0641,  -4px 4px 0 #13f1fc,  -3px 3px 0 #13f1fc,  -2px 2px 0 #13f1fc,  -1px 1px 0 #13f1fc; } }
+    text-shadow: 4px -4px 0 #da0641,
+  3px -3px 0 #da0641,
+  2px -2px 0 #da0641,
+  1px -1px 0 #da0641,
+  -4px 4px 0 #13f1fc,
+  -3px 3px 0 #13f1fc,
+  -2px 2px 0 #13f1fc,
+  -1px 1px 0 #13f1fc; } }
 
 /* Animacion para badge de booststrap */
 .sombra:hover {
