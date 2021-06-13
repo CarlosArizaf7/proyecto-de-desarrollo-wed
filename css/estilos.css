@@ -90,6 +90,12 @@ ul {
   width: 100%;
   margin-top: 10px; }
 
+/*Estilo para el carousel*/
+.carousel img {
+  border-radius: 30px;
+  width: 200px;
+  height: 300px; }
+
 /* TABLA */
 table {
   border: 6px solid;
