@@ -1,13 +1,614 @@
-/*Estilos*/
 @import "colores";
 @import "fuentes";
-@import "generales";
-@import "header";
-@import "menu";
-@import "contenedor";
-@import "footer";
-@import "efectos";
+@import "imagenes";
+@import "navbar";
+@import "botones";
+@import "mixins";
+@import "posiciones";
 
+body {
+    font-family: $body-font-family;
+  }
+  h1 {
+    font-family: $h1-font-family;
+    font-size: $h1-font-size;
+    font-weight: $h1-font-weight;
+    color: $h1-color;
+    margin-top: $margin-top-dos;
+  }
+  h2 {
+    font-size: $h2-font-size;
+    color: $h2-color;
+  }
+  h3 {
+    font-size: $h3-font-size;
+  }
   
+  h4 {
+    font-size: $h4-font-size;
+  }
+  a {
+    color: $color-principal;
+  }
+  /* Animaciones */
   
+  h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  /* Logo */
+  .logo {
+    width: $logo-width;
+  }
+  
+  /* Barra de navegacion */
+  .navbar-light .navbar-nav .nav-link {
+    color: $navbar-link-color;
+  }
+  .navbar-light .navbar-nav .active > .nav-link,
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link.show,
+  .navbar-light .navbar-nav .show > .nav-link {
+    color: $navbar-link-active-color;
+  }
+  
+  .navbar-light .navbar-text a:hover,
+  .navbar-light .navbar-text a:focus {
+    color: $navbar-hover-color;
+  }
+  .navbar-light .navbar-nav .nav-link:focus,
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: $navbar-hover-color;
+  }
+  .dropdown-item {
+    color: $dropdown-item-color;
+  }
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    color: $dropdown-item-hover-color;
+    text-decoration: $dropdown-item-text-decoration;
+    background-color: $dropdown-item-background-color;
+  }
+  .form-control:focus {
+    color: $form-control-focus-color;
+    background-color: $form-control-focus-background-color;
+    border-color: $form-control-focus-border-color;
+    outline: $form-control-focus-outline;
+    box-shadow: $form-control-focus-box-shadow;
+  }
+  
+  .form-control::placeholder {
+    color: $form-control-placeholder-color;
+  }
+  .form-control {
+    border-color: $form-control-border-color;
+  }
+  
+  /* Botones */
+  .btn-outline-success {
+    color: $btn-outline-success-color;
+    border-color: $btn-success-border-color;
+  }
+  .btn-outline-success:hover {
+    color: $btn-outline-success-hover-color;
+    background-color: $btn-outline-success-hover-background-color;
+    border-color: $btn-outline-success-hover-border-color;
+  }
+  .btn-outline-success.focus,
+  .btn-outline-success:focus {
+    box-shadow: $btn-outline-success-focus-box-shadow;
+  }
+  
+  .btn-outline-success:not(:disabled):not(.disabled).active,
+  .btn-outline-success:not(:disabled):not(.disabled):active,
+  .show > .btn-outline-success.dropdown-toggle {
+    color: $btn-outline-success-disabled-color;
+    background-color: $btn-outline-success-disabled-background-color;
+    border-color: $btn-outline-success-disabled-border-color;
+  }
+  .btn-outline-success:not(:disabled):not(.disabled).active:focus,
+  .btn-outline-success:not(:disabled):not(.disabled):active:focus,
+  .show > .btn-outline-success.dropdown-toggle:focus {
+    box-shadow: $btn-outline-success-disabled-box-shadow;
+  }
+  .margin-arriba {
+    margin-top: 1rem !important;
+    margin-left: 2.5rem !important;
+  }
+  .item-inicio{
+    margin-left: -11px
+  }
+  /* Contenido principal */
+  
+  .contenido-header {
+    @include flexbox-space-between;
+    margin: 0 auto;
+    .subtitulo {
+      font-size: $subtitulo-font-size;
+      margin-top: $margin-top-cuatro;
+      color: $color-secundario;
+    }
+    .imagen-principal {
+      width: $imagen-principal-width;
+    }
+  }
+  
+  /* Buscador */
+  .buscador {
+    @include flexbox-center;
+    margin-top: $margin-top-tres !important;
+  }
+  .boton-buscar {
+    margin-left: 0.5rem;
+  }
+  .custom-select {
+    color: $color-secundario;
+    border: 1px solid $color-principal;
+  }
+  .custom-select:focus {
+    border-color: $color-secundario;
+    box-shadow: 0 0 0 0.2rem $color-principal;
+  }
+  
+  /* Menu */
+  
+  .contenido-principal {
+    @include flexbox-center;
+    margin-top: $margin-top-dos;
+    @include text-align-center;
+    .imagen-encuentra {
+      &:hover {
+        @include tranform-scale;
+      }
+    }
+    .imagen-publica {
+      &:hover {
+        @include tranform-scale;
+      }
+    }
+  }
+  
+  /* descubre */
+  
+  .descubrir {
+    margin-top: $margin-top-cinco;
+    h2 {
+      @include text-align-center;
+      margin-top: $margin-top-tres;
+    }
+  }
+  .ciudades {
+    @include flexbox-space-between;
+    @include text-align-center;
+    img {
+      width: $imagen-ciudades-width;
+      margin-top: $margin-top-dos;
+    }
+  }
+  
+  .carousel,
+  .carousel-inner > .item > img {
+    width: $carousel-width;
+  }
+  
+  .carousel {
+    margin: $margin-cero-auto;
+  }
+  .bitcoin,
+  .barcelona,
+  .paris,
+  .londres {
+    &:hover {
+      @include transform-scale-dos;
+    }
+  }
+  /* Fin del menu */
+  
+  /* Seccion adicional */
+  .porque-nosotros {
+    margin-top: $margin-top-cinco;
+  }
+  .nosotros {
+    @include flexbox-center;
+    margin-top: $margin-top-dos;
+    img {
+      width: $imagen-nosotros-width;
+    }
+  }
+  
+  /* Fin de seccion adicional */
+  
+  .indigo {
+    background-color: $background-color;
+  }
+  
+  .margen {
+    margin-top: $margin-top-cinco;
+  }
+  
+  .list-unstyled {
+    @include flexbox-space-between;
+  }
+  .follow {
+    font-size: $follow-font-size;
+  }
+  .enlace-arriba {
+    position: absolute;
+    right: 1rem;
+    bottom: 17rem;
+    .btn-outline-success {
+      border-width: 3px;
+    }
+  }
+  
+  /* Busqueda */
+  .carousel-imagen {
+    width: 255px !important;
+  }
+  .row-2 {
+    width: $row-cards;
+    margin-top: $margin-top-dos;
+  }
+  
+  .container-dos {
+    margin-right: 191px;
+    position: relative;
+    top: 8rem;
+  }
+  .arreglo{
+    top: 4rem;
+  }
+  
+  .mapa {
+    position: fixed;
+    top: 10rem;
+    right: 1rem;
+    width: 692px;
+    height: 28rem;
+  }
+  .card-title {
+    font-size: $h5-font-size;
+  }
+  .card-text {
+    font-size: $Card-text-font-size;
+  }
+  .carousel-size {
+    width: 255px;
+  }
+  .menu-navegacion {
+    position: fixed;
+    top: 4.5rem;
+    background-color: white;
+  
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navegacion-busqueda {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    left: 0;
+    height: 4.5rem;
+  }
+  
+  .form-group {
+    margin-left: 10px;
+  
+    .form-control-range {
+      width: 80%;
+    }
+  }
+  .form-check {
+    margin: 0 10px;
+  }
+  
+  label {
+    display: inline;
+    font: 1rem "inter", sans-serif;
+    color: $color-principal;
+  }
+  
+  .date,
+  .start {
+    margin: 1rem 10px;
+    color: $color-principal;
+  }
+  .disponibilidad {
+    margin-bottom: 1rem;
+    margin-left: -13px;
+  }
+  .profile-avatar img {
+    width: 2rem;
+  }
+  .profile-avatar {
+    width: 2rem;
+  }
+  .boton-busqueda{
+    width: 5.5rem;
+    height: 2.5rem;
+  }
+  /* Inicio de sesion y registro */
+  :root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: 0.75rem;
+  }
+  .btn-google {
+    color: white;
+    background-color: #ea4335;
+    font-size: 13px;
+    margin-top: 2rem;
+  }
+  
+  .btn-facebook {
+    color: white;
+    background-color: #3b5998;
+    font-size: 13px;
+    margin-top: 2rem;
+  }
+  
+  .tamaño {
+    width: 18rem;
+  }
+  .tamaño-container {
+    width: 20rem;
+  }
+  /* Respaldo para Edge */
+  
+  @supports (-ms-ime-align: auto) {
+    .form-label-group > label {
+      display: none;
+    }
+    .form-label-group input::-ms-input-placeholder {
+      color: #777;
+    }
+  }
+  
+  /* Respaldo para Internet Explorer */
+  
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .form-label-group > label {
+      display: none;
+    }
+    .form-label-group input:-ms-input-placeholder {
+      color: #777;
+    }
+  }
+  
+  /* Mediaqueries */
+   
+  @media only screen and (min-width: 300px) and (max-width: 590px) {
+    .contenido-header {
+      .imagen-principal {
+        width: $imagen-principal-responsive-xs;
+        display: block;
+        margin: auto;
+      }
+    }
+    .contenido-header .subtitulo {
+      font-size: 16px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .titulo {
+      font-size: 1.8rem !important;
+    }
+    .contenido-header {
+      flex-wrap: wrap;
+    }
+    .contenido-principal {
+      flex-wrap: wrap;
+      margin: $margin-cero-auto;
+      margin-top: 3rem;
+      .imagen-publica-1 {
+        padding: 0;
+        width: 15rem;
+        margin-bottom: 2rem;
+      }
+      .imagen-encuentra-1 {
+        padding: 0;
+        width: 15rem;
+        margin-bottom: 2rem;
+      }
+    }
+  
+    .nosotros {
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: $margin-cero-auto;
+    }
+    .nosotros img {
+      margin: 2rem auto 0;
+      display: block;
+    }
+    .list-unstyled {
+      flex-wrap: wrap;
+    }
+    .enlace-arriba {
+      bottom: 23rem;
+    }
+  
+    .mapa {
+      display: none;
+    }
+    .card {
+      width: 16rem;
+  
+      .card-body {
+        width: 16rem;
+      }
+    }
+  
+    .alineacion {
+      display: block;
+      margin: 2rem 2rem;
+    }
+    .navbar-mobile {
+      background: white;
+      padding: 1rem;
+    }
+    .cards-habitaciones {
+      margin-top: -4rem;
+    }
+    .boton-enviar-busqueda {
+      margin-left: 1rem;
+    }
+    .menu-navegacion {
+      position: relative;
+    }
+  }
+  @media only screen and (min-width: 450px) and (max-width: 590px) {
+    .alineacion {
+      display: block;
+      margin: 0 auto;
+    }
+    .card {
+      width: 16rem;
+  
+      .card-body {
+        width: 16rem;
+      }
+    }
+    .menu-navegacion {
+      position: relative;
+    }
+    .navbar-mobile {
+      background: white;
+      padding: 1rem;
+    }
+  }
+  @media only screen and (min-width: 591px) and (max-width: 767px) {
+    .imagen-principal {
+      width: 24rem !important;
+    }
+    .contenido-header {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+    .contenido-principal {
+      text-align: center;
+  
+      .imagen-publica-1 {
+        padding: 0;
+        width: 15rem;
+      }
+      .imagen-encuentra-1 {
+        padding: 0;
+        width: 15rem;
+      }
+    }
+  
+    .nosotros img {
+      width: 169px;
+      margin-left: 10px;
+    }
+    .nosotros {
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+    .mapa {
+      display: none;
+    }
+    .enlace-arriba {
+      bottom: 20rem;
+    }
+    .row-size-md {
+      width: 37rem;
+      margin: 0;
+    }
+    .menu-navegacion {
+      position: relative;
+    }
+    .navbar-mobile {
+      background: white;
+      padding: 1rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 960px) {
+    .contenido-header {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: left;
+      .subtitulo {
+        font-size: 16px;
+        margin-top: 53px;
+      }
+      .imagen-principal {
+        width: 24rem;
+        margin-top: 32px;
+      }
+    }
+    .titulo {
+      font-size: 2rem !important;
+    }
+    .contenido-principal {
+      text-align: center;
+  
+      .imagen-publica-1 {
+        padding: 0;
+        width: 19rem;
+      }
+      .imagen-encuentra-1 {
+        padding: 0;
+        width: 19rem;
+      }
+    }
+    .nosotros img {
+      width: 169px;
+    }
+  
+    .app {
+      bottom: -4rem;
+      text-align: center;
+      left: 49rem;
+    }
+  
+    .mapa {
+      display: none;
+    }
+    .enlace-arriba {
+      bottom: 18rem;
+    }
+    .row-size-md {
+      width: 37rem;
+      margin: 0;
+    }
+    .alineacion {
+      margin: 0 auto;
+    }
+    .menu-navegacion {
+      position: relative;
+    }
+    .navbar-mobile {
+      background: white;
+      padding: 1rem;
+    }
+  }
+  @media only screen and (min-width: 961px) and (max-width: 1299px) {
+    .mapa {
+      width: 474px;
+    }
+  }
   

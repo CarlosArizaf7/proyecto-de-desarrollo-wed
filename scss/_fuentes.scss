@@ -1,4 +1,32 @@
-/*Fuentes*/
-$body-font: Raleway;
-$title-font:'Sigmar One', cursive;
-$menu-font:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* body */
+$body-font-family:"Inter", sans-serif;
+/* fin body */
+
+
+/* h1 */
+$h1-font-family: Montserrat, sans-serif;
+$h1-font-size: 2.5rem !important;
+$h1-font-weight: 800;
+
+/* fin h1 */
+
+/* h2 */
+$h2-font-size: 1.8rem;
+
+/* h3 */
+$h3-font-size: 1.5rem;
+
+
+/* h4 */
+$h4-font-size: 1.3rem;
+
+$subtitulo-font-size:18px;
+
+/* h5 y titulo de tarjeta */
+$h5-font-size: 1rem;
+
+/* texto de tarjeta */
+$Card-text-font-size:0.75rem;
+
+/* Pie de pagina */
+$follow-font-size: 1rem;
