@@ -9,8 +9,6 @@
 /* h5 y titulo de tarjeta */
 /* texto de tarjeta */
 /* Pie de pagina */
-/* Colores de barra de navegacion */
-/* Colores del formulario */
 /*boton de busquedas*/
 body {
   font-family: "Inter", sans-serif; }
@@ -54,7 +52,7 @@ h1 {
 
 /* Barra de navegacion */
 .navbar-light .navbar-nav .nav-link {
-  color: #a9a7b8; }
+  color: a9a7b8; }
 
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
@@ -187,10 +185,10 @@ h1 {
 .carousel {
   margin: 0 auto; }
 
-.bitcoin:hover,
-.barcelona:hover,
-.paris:hover,
-.londres:hover {
+.acceso:hover,
+.cuenta:hover,
+.gratis:hover,
+.cobertura:hover {
   transform: scale(1.2); }
 
 /* Fin del menu */

@@ -206,10 +206,10 @@ body {
   .carousel {
     margin: $margin-cero-auto;
   }
-  .bitcoin,
-  .barcelona,
-  .paris,
-  .londres {
+  .acceso,
+  .cuenta,
+  .gratis,
+  .cobertura {
     &:hover {
       @include transform-scale-dos;
     }
