@@ -55,13 +55,13 @@ body {
   
   /* Barra de navegacion */
   .navbar-light .navbar-nav .nav-link {
-    color: black;
+    color: $navbar-link-color;
   }
   .navbar-light .navbar-nav .active > .nav-link,
   .navbar-light .navbar-nav .nav-link.active,
   .navbar-light .navbar-nav .nav-link.show,
   .navbar-light .navbar-nav .show > .nav-link {
-    color: black;
+    color:$navbar-link-active-color;
   }
   
   .navbar-light .navbar-text a:hover,
@@ -79,7 +79,7 @@ body {
   .dropdown-item:focus {
     color: $dropdown-item-hover-color;
     text-decoration: $dropdown-item-text-decoration;
-    background-color: black;
+    background-color: #000007;
   }
   .form-control:focus {
     color: $form-control-focus-color;
@@ -255,13 +255,7 @@ body {
     top: 4rem;
   }
   
-  .mapa {
-    position: fixed;
-    top: 10rem;
-    right: 1rem;
-    width: 692px;
-    height: 28rem;
-  }
+
   .card-title {
     font-size: $h5-font-size;
   }
@@ -274,7 +268,7 @@ body {
   .menu-navegacion {
     position: fixed;
     top: 4.5rem;
-    background-color: #2a1d4e;
+    background-color: #000007;
   
     z-index: 2;
     padding: 0;
@@ -283,16 +277,6 @@ body {
     left: 0;
     display: flex;
     justify-content: space-between;
-  }
-  .navegacion-busqueda {
-    position: fixed;
-    top: 0;
-    z-index: 4;
-    padding: 0;
-    margin: 0;
-    right: 0;
-    left: 0;
-    height: 4.5rem;
   }
   
   .form-group {
@@ -337,14 +321,14 @@ body {
     --input-padding-y: 0.75rem;
   }
   .btn-google {
-    color: white;
+    color: #ffffff;
     background-color: #ea4335;
     font-size: 13px;
     margin-top: 2rem;
   }
   
   .btn-facebook {
-    color: white;
+    color: #ffffff;
     background-color: #3b5998;
     font-size: 13px;
     margin-top: 2rem;
@@ -356,6 +340,10 @@ body {
   .tamaño-container {
     width: 20rem;
   }
+  .footer{
+   color: #ffffff;
+  }
+  
   /* Respaldo para Edge */
   
   @supports (-ms-ime-align: auto) {
@@ -363,7 +351,7 @@ body {
       display: none;
     }
     .form-label-group input::-ms-input-placeholder {
-      color: #777;
+      color: #5d685c;
     }
   }
   
@@ -374,7 +362,7 @@ body {
       display: none;
     }
     .form-label-group input:-ms-input-placeholder {
-      color: #777;
+      color: #5d685c;
     }
   }
   
