@@ -1,19 +1,17 @@
-/* Colores de barra de navegacion */
-$navbar-link-color: #a9a7b8;
-$navbar-link-active-color: #6c5ce7;
-$navbar-hover-color:#f6b60e;
-$dropdown-item-color:#1b173a;
-$dropdown-item-hover-color:#f6b60e;
+$navbar-color: #000000;
+$navbar-link-active-color: #000000;
+$navbar-hover-color:#000000;
+$dropdown-item-color:#000000;
+$dropdown-item-hover-color:#000000;
 $dropdown-item-text-decoration: none;
-$dropdown-item-background-color: #f8f9fa;
+$dropdown-item-background-color: #000000;
 
 
-/* Colores del formulario */
-$form-control-focus-color: #968bea;
-$form-control-focus-background-color: #fff;
-$form-control-focus-border-color: #6c5ce7;
+$form-control-focus-color: #000000;
+$form-control-focus-background-color: rgb(0, 0, 0);
+$form-control-focus-border-color: #000000;
 $form-control-focus-outline: 0;
-$form-control-focus-box-shadow: 0 0 0 0.2rem #6c5ce7;
+$form-control-focus-box-shadow: 0 0 0 0.2rem #000000;
 
-$form-control-placeholder-color:#968bea;
-$form-control-border-color:#968bea;
+$form-control-placeholder-color:#000000;
+$form-control-border-color:#000000;
