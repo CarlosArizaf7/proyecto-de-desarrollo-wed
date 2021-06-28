@@ -55,13 +55,13 @@ body {
   
   /* Barra de navegacion */
   .navbar-light .navbar-nav .nav-link {
-    color: $navbar-link-color;
+    color: black;
   }
   .navbar-light .navbar-nav .active > .nav-link,
   .navbar-light .navbar-nav .nav-link.active,
   .navbar-light .navbar-nav .nav-link.show,
   .navbar-light .navbar-nav .show > .nav-link {
-    color: $navbar-link-active-color;
+    color: black;
   }
   
   .navbar-light .navbar-text a:hover,
@@ -79,7 +79,7 @@ body {
   .dropdown-item:focus {
     color: $dropdown-item-hover-color;
     text-decoration: $dropdown-item-text-decoration;
-    background-color: $dropdown-item-background-color;
+    background-color: black;
   }
   .form-control:focus {
     color: $form-control-focus-color;
@@ -145,23 +145,7 @@ body {
     }
   }
   
-  /* Buscador */
-  .buscador {
-    @include flexbox-center;
-    margin-top: $margin-top-tres !important;
-  }
-  .boton-buscar {
-    margin-left: 0.5rem;
-  }
-  .custom-select {
-    color: $color-secundario;
-    border: 1px solid $color-principal;
-  }
-  .custom-select:focus {
-    border-color: $color-secundario;
-    box-shadow: 0 0 0 0.2rem $color-principal;
-  }
-  
+ 
   /* Menu */
   
   .contenido-principal {
@@ -290,7 +274,7 @@ body {
   .menu-navegacion {
     position: fixed;
     top: 4.5rem;
-    background-color: white;
+    background-color: #2a1d4e;
   
     z-index: 2;
     padding: 0;
