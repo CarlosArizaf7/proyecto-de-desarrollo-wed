@@ -1,8 +1,8 @@
 @import "colores";
 @import "fuentes";
+@import "botones";
 @import "imagenes";
 @import "navbar";
-@import "botones";
 @import "mixins";
 @import "posiciones";
 
@@ -152,32 +152,31 @@ body {
     @include flexbox-center;
     margin-top: $margin-top-dos;
     @include text-align-center;
-    .imagen-encuentra {
+    .imagen-acciones-de-streaming{
       &:hover {
         @include tranform-scale;
       }
     }
-    .imagen-publica {
+    .imagen-criptomonedas {
       &:hover {
         @include tranform-scale;
       }
     }
   }
   
-  /* descubre */
   
-  .descubrir {
+  .invertir-beneficios {
     margin-top: $margin-top-cinco;
     h2 {
       @include text-align-center;
       margin-top: $margin-top-tres;
     }
   }
-  .ciudades {
+  .ventajas {
     @include flexbox-space-between;
     @include text-align-center;
     img {
-      width: $imagen-ciudades-width;
+      width: $imagen-streaming-width;
       margin-top: $margin-top-dos;
     }
   }
@@ -200,7 +199,7 @@ body {
   }
   /* Fin del menu */
   
-  /* Seccion adicional */
+  /* Seccion porque nosotros */
   .porque-nosotros {
     margin-top: $margin-top-cinco;
   }
@@ -212,11 +211,7 @@ body {
     }
   }
   
-  /* Fin de seccion adicional */
-  
-  .indigo {
-    background-color: $background-color;
-  }
+  /* Fin de seccion porque nosotros */
   
   .margen {
     margin-top: $margin-top-cinco;
@@ -236,114 +231,8 @@ body {
       border-width: 3px;
     }
   }
-  
-  /* Busqueda */
-  .carousel-imagen {
-    width: 255px !important;
-  }
-  .row-2 {
-    width: $row-cards;
-    margin-top: $margin-top-dos;
-  }
-  
-  .container-dos {
-    margin-right: 191px;
-    position: relative;
-    top: 8rem;
-  }
-  .arreglo{
-    top: 4rem;
-  }
-  
+ 
 
-  .card-title {
-    font-size: $h5-font-size;
-  }
-  .card-text {
-    font-size: $Card-text-font-size;
-  }
-  .carousel-size {
-    width: 255px;
-  }
-  .menu-navegacion {
-    position: fixed;
-    top: 4.5rem;
-    background-color: #000007;
-  
-    z-index: 2;
-    padding: 0;
-    margin: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .form-group {
-    margin-left: 10px;
-  
-    .form-control-range {
-      width: 80%;
-    }
-  }
-  .form-check {
-    margin: 0 10px;
-  }
-  
-  label {
-    display: inline;
-    font: 1rem "inter", sans-serif;
-    color: $color-principal;
-  }
-  
-  .date,
-  .start {
-    margin: 1rem 10px;
-    color: $color-principal;
-  }
-  .disponibilidad {
-    margin-bottom: 1rem;
-    margin-left: -13px;
-  }
-  .profile-avatar img {
-    width: 2rem;
-  }
-  .profile-avatar {
-    width: 2rem;
-  }
-  .boton-busqueda{
-    width: 5.5rem;
-    height: 2.5rem;
-  }
-  /* Inicio de sesion y registro */
-  :root {
-    --input-padding-x: 1.5rem;
-    --input-padding-y: 0.75rem;
-  }
-  .btn-google {
-    color: #ffffff;
-    background-color: #ea4335;
-    font-size: 13px;
-    margin-top: 2rem;
-  }
-  
-  .btn-facebook {
-    color: #ffffff;
-    background-color: #3b5998;
-    font-size: 13px;
-    margin-top: 2rem;
-  }
-  
-  .tamaño {
-    width: 18rem;
-  }
-  .tamaño-container {
-    width: 20rem;
-  }
-  .footer{
-   color: #ffffff;
-  }
-  
   /* Respaldo para Edge */
   
   @supports (-ms-ime-align: auto) {
@@ -391,18 +280,18 @@ body {
       flex-wrap: wrap;
       margin: $margin-cero-auto;
       margin-top: 3rem;
-      .imagen-publica-1 {
+      .imagen-criptomonedas-1 {
         padding: 0;
-        width: 15rem;
-        margin-bottom: 2rem;
+        width: 12rem;
+        margin-bottom: 3rem;
       }
-      .imagen-encuentra-1 {
+      .imagen-streaming-1 {
         padding: 0;
-        width: 15rem;
+        width: 12rem;
         margin-bottom: 2rem;
       }
     }
-  
+
     .nosotros {
       margin-top: 2rem;
       flex-wrap: wrap;
@@ -419,28 +308,14 @@ body {
     .enlace-arriba {
       bottom: 23rem;
     }
-  
-    .mapa {
-      display: none;
-    }
-    .card {
-      width: 16rem;
-  
-      .card-body {
-        width: 16rem;
-      }
-    }
-  
+    
     .alineacion {
       display: block;
       margin: 2rem 2rem;
     }
     .navbar-mobile {
-      background: white;
+      background: #000007;
       padding: 1rem;
-    }
-    .cards-habitaciones {
-      margin-top: -4rem;
     }
     .boton-enviar-busqueda {
       margin-left: 1rem;
@@ -449,26 +324,23 @@ body {
       position: relative;
     }
   }
+
+  
   @media only screen and (min-width: 450px) and (max-width: 590px) {
     .alineacion {
       display: block;
       margin: 0 auto;
     }
-    .card {
-      width: 16rem;
-  
-      .card-body {
-        width: 16rem;
-      }
-    }
     .menu-navegacion {
       position: relative;
     }
     .navbar-mobile {
-      background: white;
+      background: #000007;
       padding: 1rem;
     }
   }
+
+
   @media only screen and (min-width: 591px) and (max-width: 767px) {
     .imagen-principal {
       width: 24rem !important;
@@ -481,11 +353,11 @@ body {
     .contenido-principal {
       text-align: center;
   
-      .imagen-publica-1 {
+      .imagen-criptomonedas-1 {
         padding: 0;
         width: 15rem;
       }
-      .imagen-encuentra-1 {
+      .imagen-acciones-de-streaming-1 {
         padding: 0;
         width: 15rem;
       }
@@ -499,9 +371,7 @@ body {
       flex-wrap: nowrap;
       justify-content: center;
     }
-    .mapa {
-      display: none;
-    }
+    
     .enlace-arriba {
       bottom: 20rem;
     }
@@ -513,11 +383,12 @@ body {
       position: relative;
     }
     .navbar-mobile {
-      background: white;
+      background: #000007;
       padding: 1rem;
     }
   }
   
+
   @media only screen and (min-width: 768px) and (max-width: 960px) {
     .contenido-header {
       flex-wrap: wrap;
@@ -538,11 +409,11 @@ body {
     .contenido-principal {
       text-align: center;
   
-      .imagen-publica-1 {
+      .imagen-criptomonedas {
         padding: 0;
         width: 19rem;
       }
-      .imagen-encuentra-1 {
+      .imagen-streaming {
         padding: 0;
         width: 19rem;
       }
@@ -550,16 +421,13 @@ body {
     .nosotros img {
       width: 169px;
     }
-  
+
     .app {
       bottom: -4rem;
       text-align: center;
       left: 49rem;
     }
-  
-    .mapa {
-      display: none;
-    }
+
     .enlace-arriba {
       bottom: 18rem;
     }
@@ -574,13 +442,24 @@ body {
       position: relative;
     }
     .navbar-mobile {
-      background: white;
+      background: #000007;
       padding: 1rem;
     }
   }
-  @media only screen and (min-width: 961px) and (max-width: 1299px) {
-    .mapa {
-      width: 474px;
-    }
-  }
   
+  
+  @media (max-width: 767.98px) {
+    .ftco-counter .counter-wrap {
+      margin-bottom: 20px; } }
+
+.block-20 {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px; }
+

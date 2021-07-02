@@ -9,7 +9,7 @@
 /* h5 y titulo de tarjeta */
 /* texto de tarjeta */
 /* Pie de pagina */
-/* boton de busqueda */
+/** boton buscador**/
 body {
   font-family: "Inter", sans-serif; }
 
@@ -75,7 +75,7 @@ h1 {
 .dropdown-item:focus {
   color: gold;
   text-decoration: none;
-  background-color: #000000; }
+  background-color: #000007; }
 
 .form-control:focus {
   color: #ffd700;
@@ -92,8 +92,8 @@ h1 {
 
 /* Botones */
 .btn-outline-success {
-  color: #ffd700;
-  border-color: gold; }
+  color: #f6b60e;
+  border-color: #f6b60e; }
 
 .btn-outline-success:hover {
   color: #fff;
@@ -102,14 +102,14 @@ h1 {
 
 .btn-outline-success.focus,
 .btn-outline-success:focus {
-  box-shadow: 0 0 0 0.2rem #ffd700; }
+  box-shadow: 0 0 0 0.2rem #f6b60e; }
 
 .btn-outline-success:not(:disabled):not(.disabled).active,
 .btn-outline-success:not(:disabled):not(.disabled):active,
 .show > .btn-outline-success.dropdown-toggle {
-  color: #000000;
-  background-color: #ffd700;
-  border-color: black; }
+  color: #fff;
+  background-color: #f6b60e;
+  border-color: #968bea; }
 
 .btn-outline-success:not(:disabled):not(.disabled).active:focus,
 .btn-outline-success:not(:disabled):not(.disabled):active:focus,
@@ -141,23 +141,22 @@ h1 {
   justify-content: center;
   margin-top: 6rem;
   text-align: center; }
-  .contenido-principal .imagen-encuentra:hover {
+  .contenido-principal .imagen-acciones-de-streaming:hover {
     transform: scale(1.1); }
-  .contenido-principal .imagen-publica:hover {
+  .contenido-principal .imagen-criptomonedas:hover {
     transform: scale(1.1); }
 
-/* descubre */
-.descubrir {
+.invertir-beneficios {
   margin-top: 5rem; }
-  .descubrir h2 {
+  .invertir-beneficios h2 {
     text-align: center;
     margin-top: 3rem; }
 
-.ciudades {
+.ventajas {
   display: flex;
   justify-content: space-between;
   text-align: center; }
-  .ciudades img {
+  .ventajas img {
     width: 200px;
     margin-top: 6rem; }
 
@@ -175,7 +174,7 @@ h1 {
   transform: scale(1.2); }
 
 /* Fin del menu */
-/* Seccion adicional */
+/* Seccion porque nosotros */
 .porque-nosotros {
   margin-top: 5rem; }
 
@@ -186,10 +185,7 @@ h1 {
   .nosotros img {
     width: 200px; }
 
-/* Fin de seccion adicional */
-.indigo {
-  background-color: #000007; }
-
+/* Fin de seccion porque nosotros */
 .margen {
   margin-top: 5rem; }
 
@@ -302,6 +298,7 @@ label {
 .footer {
   color: #ffffff; }
 
+/* Fin de inicio y registro */
 /* Respaldo para Edge */
 @supports (-ms-ime-align: auto) {
   .form-label-group > label {
@@ -334,11 +331,11 @@ label {
     flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 3rem; }
-    .contenido-principal .imagen-publica-1 {
+    .contenido-principal .imagen-criptomonedas-1 {
       padding: 0;
       width: 15rem;
       margin-bottom: 2rem; }
-    .contenido-principal .imagen-encuentra-1 {
+    .contenido-principal .imagen-acciones-de-streaming-1 {
       padding: 0;
       width: 15rem;
       margin-bottom: 2rem; }
@@ -354,8 +351,6 @@ label {
     flex-wrap: wrap; }
   .enlace-arriba {
     bottom: 23rem; }
-  .mapa {
-    display: none; }
   .card {
     width: 16rem; }
     .card .card-body {
@@ -364,10 +359,8 @@ label {
     display: block;
     margin: 2rem 2rem; }
   .navbar-mobile {
-    background: white;
+    background: #000007;
     padding: 1rem; }
-  .cards-habitaciones {
-    margin-top: -4rem; }
   .boton-enviar-busqueda {
     margin-left: 1rem; }
   .menu-navegacion {
@@ -377,14 +370,10 @@ label {
   .alineacion {
     display: block;
     margin: 0 auto; }
-  .card {
-    width: 16rem; }
-    .card .card-body {
-      width: 16rem; }
   .menu-navegacion {
     position: relative; }
   .navbar-mobile {
-    background: white;
+    background: #000007;
     padding: 1rem; } }
 
 @media only screen and (min-width: 591px) and (max-width: 767px) {
@@ -396,10 +385,10 @@ label {
     text-align: center; }
   .contenido-principal {
     text-align: center; }
-    .contenido-principal .imagen-publica-1 {
+    .contenido-principal .imagen-criptomonedas-1 {
       padding: 0;
       width: 15rem; }
-    .contenido-principal .imagen-encuentra-1 {
+    .contenido-principal .imagen-acciones-de-streaming-1 {
       padding: 0;
       width: 15rem; }
   .nosotros img {
@@ -408,8 +397,6 @@ label {
   .nosotros {
     flex-wrap: nowrap;
     justify-content: center; }
-  .mapa {
-    display: none; }
   .enlace-arriba {
     bottom: 20rem; }
   .row-size-md {
@@ -418,7 +405,7 @@ label {
   .menu-navegacion {
     position: relative; }
   .navbar-mobile {
-    background: white;
+    background: #000007;
     padding: 1rem; } }
 
 @media only screen and (min-width: 768px) and (max-width: 960px) {
@@ -436,10 +423,10 @@ label {
     font-size: 2rem !important; }
   .contenido-principal {
     text-align: center; }
-    .contenido-principal .imagen-publica-1 {
+    .contenido-principal .imagen-criptomonedas-1 {
       padding: 0;
       width: 19rem; }
-    .contenido-principal .imagen-encuentra-1 {
+    .contenido-principal .imagen-acciones-de-streaming-1 {
       padding: 0;
       width: 19rem; }
   .nosotros img {
@@ -448,8 +435,6 @@ label {
     bottom: -4rem;
     text-align: center;
     left: 49rem; }
-  .mapa {
-    display: none; }
   .enlace-arriba {
     bottom: 18rem; }
   .row-size-md {
@@ -460,9 +445,20 @@ label {
   .menu-navegacion {
     position: relative; }
   .navbar-mobile {
-    background: white;
+    background: #000007;
     padding: 1rem; } }
 
-@media only screen and (min-width: 961px) and (max-width: 1299px) {
-  .mapa {
-    width: 474px; } }
+@media (max-width: 767.98px) {
+  .ftco-counter .counter-wrap {
+    margin-bottom: 20px; } }
+
+.block-20 {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px; }
